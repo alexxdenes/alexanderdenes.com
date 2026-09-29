@@ -1,0 +1,37 @@
+:root {
+  --ink: #1a1a1a;
+  --muted: #6b6b6b;
+  --paper: #ffffff;
+  --link: #2a4d8f;
+  --rule: #e2e2e2;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6;
+}
+main { max-width: 34em; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+
+.site-name { font-size: 1.9rem; font-weight: normal; letter-spacing: -0.01em; margin: 0 0 0.25rem; }
+.site-name a { color: var(--ink); text-decoration: none; }
+.tagline { color: var(--muted); margin: 0 0 3rem; font-style: italic; }
+
+.essays { list-style: none; padding: 0; margin: 0; }
+.essays li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.4rem 0; }
+.essays time { color: var(--muted); font-size: 0.85em; white-space: nowrap; }
+
+.back { font-size: 0.9em; }
+article h1 { font-size: 1.6rem; font-weight: normal; line-height: 1.25; margin: 2.5rem 0 0.3rem; }
+article .date { color: var(--muted); font-size: 0.9em; margin: 0 0 2rem; }
+article p { margin: 0 0 1.2em; }
+article blockquote { margin: 1.5em 0; padding-left: 1em; border-left: 2px solid var(--rule); color: var(--muted); }
+
+footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85em; }
